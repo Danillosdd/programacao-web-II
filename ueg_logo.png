@@ -1,0 +1,1983 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title> ::.Universidade Estadual de Goiás.::</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="Universidade Estadual de Goiás">
+		
+		<!-- Certificado Globalsign -->
+		<meta name="_globalsign-domain-verification" content="iJTZYoYOb8VgT_IYW8e-goEYYvgUk9g85eFikHXYrm">
+
+		<!-- Facebook and Twitter integration -->
+		<meta property="og:title" content="::. Universidade Estadual de Goiás .::">
+		<meta property="og:image" content="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral/images/logopadrao.png">
+		<meta property="og:url" content="https://www.ueg.br/images/logo-ueg.png">
+		<meta property="og:site_name" content="Universidade Estadual de Goiás">
+		<meta property="og:description" content="Site institucional da Universidade Estadual de Goiás">
+		<meta name="twitter:title" content=" ::. Universidade Estadual de Goiás .::">
+		<meta name="twitter:image" content="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral/images/logopadrao.png">
+		<meta name="twitter:url" content="https://www.ueg.br/images/logo-ueg.png">
+		<meta name="facebook-domain-verification" content="gqjl4ked5vsmmx9tj0urpbf6oaeuj0" />
+
+		<link rel="shortcut icon" href="https://cdn.ueg.edu.br///cms_visualizador/interface/images/favicon.png" type="image/png">
+		<link rel="stylesheet" href="https://cdn.ueg.edu.br///cms_visualizador//interface/_js/fancybox/source/jquery.fancybox.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//css/_assets.min.css">
+		<!-- Theme style  -->
+		<link rel="stylesheet" href="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//css/main.css?s=4.3">
+		<link rel="stylesheet" href="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//css/personalizacoes.css?v=1.1">
+		
+		<script type="text/javascript">
+			var UEG = {
+				templateUrl: 'https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral/'
+			};
+		</script>
+
+		<!-- Matomo -->
+		<script type="text/javascript">
+			var _paq = window._paq = window._paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+			_paq.push(["setCookieDomain", "*.ueg.br"]);
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+			  var u="https://analytcs.ueg.br/";
+			  _paq.push(['setTrackerUrl', u+'matomo.php']);
+			  _paq.push(['setSiteId', '1']);
+			  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+			  g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+			})();
+		</script>
+		<!-- End Matomo Code -->
+
+		<!-- Google Analytics -->
+		<script>
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r;
+				i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date();
+				a = s.createElement(o),
+						m = s.getElementsByTagName(o)[0];
+				a.async = 1;
+				a.src = g;
+				m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-24883102-3', 'auto');
+			ga('send', 'pageview');
+
+		</script>
+
+		<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery.min.000331.js"></script>
+
+	</head>
+	<body>
+		<noscript><p style="padding: 0; margin:0; line-height: 0px"><img src="https://analytcs.ueg.br/piwik.php?idsite=1&rec=1" style="border:0;" alt="" /></p></noscript>
+
+		<div class="ueg-loader"></div>
+
+		<div id="pagina">
+
+			<!-- MENU MOBILE -->
+<nav class="ueg-nav just-mobile menu-mobile menu-fixo" role="navigation">
+	<div class="top-menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-lg-2 hidden-sm hidden-md">
+					<button type="button" class="toggle-search navbar-toggle collapsed" data-toggle="collapse" data-target="#searchbutton">
+						<i class="fa fa-search"></i>
+					</button>
+					<button id="menu-over" type="button" class="slide-menu-open navbar-menu">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div id="ueg-logo">
+						<a href="https://www.ueg.br/">
+							<img class="cor-d" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logo.png" alt="Logomarca: Universidade Estadual de Goiás" />
+							<img class="cor-y" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logoy-25.png" alt="Logomarca: Universidade Estadual de Goiás" />
+							<img class="cor-b" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logob-25.png" alt="Logomarca: Universidade Estadual de Goiás" />
+						</a>
+					</div>
+					<div id="ueg-icone">
+						<a href="https://www.ueg.br/">
+							<img class="cor-d" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logo.png" alt="Logomarca: Universidade Estadual de Goiás" />
+							<img class="cor-y" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logoy-25.png" alt="Logomarca: Universidade Estadual de Goiás" />
+							<img class="cor-b" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logob-25.png" alt="Logomarca: Universidade Estadual de Goiás" />
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding">
+					<div id="searchbutton" class="navbar-collapse collapse no-padding">
+						<form name="f-busca-desktop" action="https://www.ueg.br/aditivo/busca_interna">
+							<input type="text" name="filtro" class="form-control search-control" placeholder="Pesquisar no site" id="busca-mobile" value="">
+							<input type="hidden" name="funcao" value="buscar">
+						</form>
+
+					</div>
+
+					<!-- MENU MOBILE  -->
+					<div class="side-menu-overlay" style="width: 0px; opacity: 0;"></div>
+					<div id="scroll-menu" class="side-menu-wrapper scrollbar force-overflow">
+						<a href="#" class="menu-close">&times;</a>
+						<nav>
+							<ul class="flexnav">
+								<li><a class="btnAumentar" href="#">A+</a></li>
+								<li><a class="btnPadrao" href="#">A</a></li>
+								<li><a class="btnDiminuir"  href="#">A-</a></li>
+								<div id="botoes-acessibilidade" class="botoes-acessibilidade">
+									<li><a data-class="white" href="#">Contraste Padrão</a></li>
+									<li><a data-class="yellow" href="#">Contraste Amarelo</a></li>
+									<li><a data-class="blue" href="#">Contraste Azul</a></li>
+									<li><a data-class="black" href="#">Contraste Preto</a></li>
+									<li><a href="https://www.vlibras.gov.br/" title="O conteúdo desse portal pode ser acessível em Libras usando o VLibras" target="_blank"><span>VLibras</span></a></li>
+								</div>
+								<li class="divisor"></li>
+								<li><a href="https://www.go.gov.br/servicos-digitais/cge/nova-ouvidoria/nova-manifestacao?orgao=47" target="_blank">Ouvidoria</a></li>
+								<li><a href="https://www.go.gov.br/servicos-digitais/cge/nova-ouvidoria/nova-manifestacao/tela-lai?orgao=47&tipo_manifestacao=7" target="_blank">e-SIC</a></li>
+								<li><a href="https://www.go.gov.br/servicos-digitais/vapt-vupt/unidades-e-filas/unidades" target="_blank">SIC</a></li>
+								<li><a href="//www.ueg.br/compliance" target="_blank">Compliance</a></li>
+								<li><a href="https://www.ueg.br/exec/agenda_autoridades/?funcao=tela_inicial">Agenda de Autoridades</a></li>
+								<li><a href="/referencia/11030">Acessibilidade</a></li>
+								<li><a href="//mail.ueg.br/" target="_blank">Webmail</a></li>
+								<li><a href="//www.adms.ueg.br/" target="_blank">ADMS</a></li>
+								<li><a href="https://www.ueg.br/exec/mapa_site">Mapa do Site</a></li>
+
+								<li class="divisor"></li>
+
+								
+
+								<li>
+									<a href="https://www.ueg.br/intermediario/13644_institucional">Institucional</a>
+									<ul>
+										<li><a href="https://www.ueg.br/intermediario/13645_quem_somos">Quem somos</a></li><li><a href="https://www.ueg.br/intermediario/14249_conselhos_superiores">Conselhos Superiores</a></li><li><a href="https://www.ueg.br/conteudo/13646_reitoria">Reitoria</a></li><li><a href="https://www.ueg.br/conteudo/14252_pro_reitorias">Pró-Reitorias</a></li><li><a href="http://www.institutos.ueg.br">Institutos Acadêmicos</a></li><li><a href="http://www.legislacao.ueg.br/">Legislação</a></li><li><a href="http://www.ueg.br/exec/servico/administracao">Administração</a></li><li><a href="https://www.go.gov.br/servicos/servicos-por-orgao/universidade-estadual-de-goias">Carta de Serviços</a></li>
+									</ul>
+								</li><li>
+									<a href="https://www.ueg.br/intermediario/13649_ensino">Ensino</a>
+									<ul>
+										<li><a href="http://www.prg.ueg.br/">Pró-Reitoria de Graduação</a></li><li><a href="https://www.ueg.br/conteudo/15558_graduacao">Graduação</a></li><li><a href="http://www.cear.ueg.br/">Educação a Distância</a></li><li><a href="https://www.ueg.br/prp/">Pós-graduação</a></li>
+									</ul>
+								</li><li>
+									<a href="https://www.ueg.br/intermediario/13658_pesquisa">Pesquisa</a>
+									<ul>
+										<li><a href="http://www.prp.ueg.br/">Pró-Reitoria de Pesquisa e Pós-graduação</a></li><li><a href="https://ueg.br/inovacentro/">Pesquisa e Inovação</a></li><li><a href="https://www.ueg.br/conteudo/13712_etica_em_pesquisa">Ética em pesquisa</a></li><li><a href="https://www.ueg.br/conteudo/13711_iniciacao_cientifica">Iniciação Científica</a></li><li><a href="https://www.ueg.br/conteudo/13718_editora_ueg">Editora UEG</a></li>
+									</ul>
+								</li><li>
+									<a href="https://www.ueg.br/intermediario/13659_extensao">Extensão</a>
+									<ul>
+										<li><a href="https://www.ueg.br/pre">Pró-Reitoria de Extensão e Assuntos Estudantis</a></li><li><a href="https://www.ueg.br/conteudo/13729_acoes_de_extensao">Ações de Extensão</a></li><li><a href="https://www.ueg.br/intermediario/13730_cultura_e_esportes">Cultura e Esportes</a></li><li><a href="https://www.ueg.br/intermediario/13731_assuntos_estudantis">Assuntos Estudantis</a></li>
+									</ul>
+								</li><li>
+									<a href="https://www.ueg.br/intermediario/13660_estude_conosco">Estude Conosco</a>
+									<ul>
+										<li><a href="https://www.ueg.br/conteudo/15836_nossa_universidade">Nossa Universidade</a></li><li><a href="https://www.ueg.br/conteudo/13734_formas_de_ingresso">Formas de Ingresso</a></li><li><a href="https://www.ueg.br/conteudo/13737_sistema_de_cotas">Sistema de Cotas</a></li><li><a href="https://www.nucleodeselecao.ueg.br/processos_t.asp?ct=3">Processos Seletivos</a></li><li><a href="https://www.ueg.br/conteudo/13733_nucleo_de_selecao">Núcleo de Seleção</a></li><li><a href="https://www.ueg.br/exec/consulta_cursos/lista">Nossos Cursos</a></li>
+									</ul>
+								</li>
+
+								
+
+								<li class="divisor"></li>
+								<li>
+									<a href="#">Cursos</a>
+									<ul>
+										<li>
+											
+											<a href="https://www.ueg.br/exec/consulta_cursos/lista/agrarias">
+												Instituto Acadêmico de Ciências Agrárias e Sustentabilidade
+											</a>
+										</li><li>
+											
+											<a href="https://www.ueg.br/exec/consulta_cursos/lista/saude">
+												Instituto Acadêmico de Ciências da Saúde e Biológicas
+											</a>
+										</li><li>
+											
+											<a href="https://www.ueg.br/exec/consulta_cursos/lista/sociais">
+												Instituto Acadêmico de Ciências Sociais Aplicadas
+											</a>
+										</li><li>
+											
+											<a href="https://www.ueg.br/exec/consulta_cursos/lista/tecnologicas">
+												Instituto Acadêmico de Ciências Tecnológicas
+											</a>
+										</li><li>
+											
+											<a href="https://www.ueg.br/exec/consulta_cursos/lista/humanas">
+												Instituto Acadêmico de Educação e Licenciaturas
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li><a href="https://www.ueg.br/exec/listagem_unidades">Câmpus</a></li>
+								<li class="divisor"></li>
+								<li><a href="https://www.ueg.br/exec/servico/alunos">Alunos</a></li>
+								<li><a href="https://www.ueg.br/exec/servico/professores">Professores</a></li>
+								<li><a href="https://www.ueg.br/exec/servico/servidores">Servidores</a></li>
+								<li><a href="https://www.ueg.br/conteudo/22159_acesso_informacao">Acesso à Informação</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</nav>
+
+			<!-- MENU DESKTOP -->
+<nav class="ueg-nav hidden-xs" role="navigation">
+	<div class="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 text-right top-link ">
+					<div class="menu-superior ">
+						<div class="logo-black hidden-lg">
+							<a href="https://www.ueg.br/home">
+								<img class="cor-d" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logoblack.png" />
+								<img class="cor-b" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logoblack.png" />
+								<img class="cor-y" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logoblacky.png" />
+							</a>
+						</div>
+						
+						<p class="site">
+							<a 
+								href="https://www.go.gov.br/servicos-digitais/cge/nova-ouvidoria/nova-manifestacao?orgao=47" 
+								target="_blank">
+								<img 
+									src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/ouvidoria2.png" 
+									alt="Ouvidoria"
+								/>
+							</a>
+						</p>
+						
+						<p class="site">
+							<a 
+								href="https://www.go.gov.br/servicos-digitais/cge/nova-ouvidoria/nova-manifestacao/tela-lai?orgao=47&tipo_manifestacao=7" 
+								target="_blank">
+								<img 
+									src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/esic.png" 
+									alt="e-SiC: Serviço de Informação ao Cidadão (Portal Expresso)"
+								/>
+							</a>
+						</p>
+						<p class="site">
+							<a 
+								href="https://www.go.gov.br/servicos-digitais/vapt-vupt/unidades-e-filas/unidades" 
+								target="_blank">
+								<img 
+									src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/sic.png" 
+									alt="SiC: Serviço de Informação ao Cidadão (Portal Vapt Vupt)"
+								/>
+							</a>
+						</p>
+						<p class="site">
+							<a 
+								href="//www.ueg.br/compliance" 
+								target="_blank">
+								<img src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/compliance.png" />
+								Compliance
+							</a>
+						</p>
+						<p class="site">
+							<a href="https://www.ueg.br/exec/agenda_autoridades/?funcao=tela_inicial">Agenda de Autoridades</a>
+						</p>
+						<p class="site">
+							<a href="/referencia/11030">
+								<img src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/acessibilidade-site.png" />
+								Acessibilidade
+							</a>
+						</p>
+						<p class="site"><a href="https://www.ueg.br/conteudo/14509/" target="_blank">Fale conosco</a></p>
+						<p class="site"><a href="//www.adms.ueg.br/" target="_blank">ADMS</a></p>
+						<p class="site">
+							<a href="https://www.ueg.br/exec/mapa_site">
+								<span class="fa fa-fw fa-sitemap"></span>
+								Mapa do Site
+							</a>
+						</p>
+						<p class="site">
+							<a href="/referencia/12411">
+								LGPD
+							</a>
+						</p>
+						<ul class="ueg-social  hidden-xs">
+							<li>
+								<a href="#">
+									<img class="cor-d" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logogoverno.png" />
+									<img class="cor-y" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logogovernoy.png" />
+									<img class="cor-b" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logogoverno.png" />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div id="menuHeader" class="top-menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-md-12 col-lg-2 no-pad-left hidden-sm hidden-md">
+					<div id="ueg-logo">
+						<a href="https://www.ueg.br/">
+							<img class="cor-d" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logo.png" alt="Logomarca: Universidade Estadual de Goiás" />
+							<img class="cor-y" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logoy-25.png" alt="Logomarca: Universidade Estadual de Goiás" />
+							<img class="cor-b" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logob-25.png" alt="Logomarca: Universidade Estadual de Goiás" />
+						</a>
+					</div>
+					<div id="ueg-icone">
+						<a href="https://www.ueg.br/">
+							<img class="cor-d" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logo.png" alt="Logomarca: Universidade Estadual de Goiás" />
+							<img class="cor-y" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logoy-25.png" alt="Logomarca: Universidade Estadual de Goiás" />
+							<img class="cor-b" src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/logob-25.png" alt="Logomarca: Universidade Estadual de Goiás" />
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding">
+					<!-- MENU DESKTOP  -->
+					<div id="navbar3" class="menu-principal no-padding menu-desktop">
+						<ul class="nav navbar-nav">
+
+							
+
+							<li class="links-drop dropdown">
+								<a href="https://www.ueg.br/intermediario/13644_institucional" aria-expanded="false">
+									
+									Institucional
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="https://www.ueg.br/intermediario/13645_quem_somos">
+											Quem somos
+											<span>
+												
+												<i class="fa fa-th-list seta-menu"></i>
+											</span>
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/intermediario/14249_conselhos_superiores">
+											Conselhos Superiores
+											<span>
+												
+												<i class="fa fa-th-list seta-menu"></i>
+											</span>
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/13646_reitoria">
+											Reitoria
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/14252_pro_reitorias">
+											Pró-Reitorias
+											
+										</a>
+									</li><li>
+										<a href="http://www.institutos.ueg.br">
+											Institutos Acadêmicos
+											
+										</a>
+									</li><li>
+										<a href="http://www.legislacao.ueg.br/">
+											Legislação
+											
+										</a>
+									</li><li>
+										<a href="http://www.ueg.br/exec/servico/administracao">
+											Administração
+											
+										</a>
+									</li><li>
+										<a href="https://www.go.gov.br/servicos/servicos-por-orgao/universidade-estadual-de-goias">
+											Carta de Serviços
+											
+										</a>
+									</li>
+								</ul>
+							</li><li class="links-drop dropdown">
+								<a href="https://www.ueg.br/intermediario/13649_ensino" aria-expanded="false">
+									
+									Ensino
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="http://www.prg.ueg.br/">
+											Pró-Reitoria de Graduação
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/15558_graduacao">
+											Graduação
+											
+										</a>
+									</li><li>
+										<a href="http://www.cear.ueg.br/">
+											Educação a Distância
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/prp/">
+											Pós-graduação
+											
+										</a>
+									</li>
+								</ul>
+							</li><li class="links-drop dropdown">
+								<a href="https://www.ueg.br/intermediario/13658_pesquisa" aria-expanded="false">
+									
+									Pesquisa
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="http://www.prp.ueg.br/">
+											Pró-Reitoria de Pesquisa e Pós-graduação
+											
+										</a>
+									</li><li>
+										<a href="https://ueg.br/inovacentro/">
+											Pesquisa e Inovação
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/13712_etica_em_pesquisa">
+											Ética em pesquisa
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/13711_iniciacao_cientifica">
+											Iniciação Científica
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/13718_editora_ueg">
+											Editora UEG
+											
+										</a>
+									</li>
+								</ul>
+							</li><li class="links-drop dropdown">
+								<a href="https://www.ueg.br/intermediario/13659_extensao" aria-expanded="false">
+									
+									Extensão
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="https://www.ueg.br/pre">
+											Pró-Reitoria de Extensão e Assuntos Estudantis
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/13729_acoes_de_extensao">
+											Ações de Extensão
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/intermediario/13730_cultura_e_esportes">
+											Cultura e Esportes
+											<span>
+												
+												<i class="fa fa-th-list seta-menu"></i>
+											</span>
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/intermediario/13731_assuntos_estudantis">
+											Assuntos Estudantis
+											<span>
+												
+												<i class="fa fa-th-list seta-menu"></i>
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li><li class="links-drop dropdown">
+								<a href="https://www.ueg.br/intermediario/13660_estude_conosco" aria-expanded="false">
+									
+									Estude Conosco
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" role="menu">
+									<li>
+										<a href="https://www.ueg.br/conteudo/15836_nossa_universidade">
+											Nossa Universidade
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/13734_formas_de_ingresso">
+											Formas de Ingresso
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/13737_sistema_de_cotas">
+											Sistema de Cotas
+											
+										</a>
+									</li><li>
+										<a href="https://www.nucleodeselecao.ueg.br/processos_t.asp?ct=3">
+											Processos Seletivos
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/conteudo/13733_nucleo_de_selecao">
+											Núcleo de Seleção
+											
+										</a>
+									</li><li>
+										<a href="https://www.ueg.br/exec/consulta_cursos/lista">
+											Nossos Cursos
+											
+										</a>
+									</li>
+								</ul>
+							</li>
+
+							
+
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 no-padding">
+					<div class="col-xs-12 text-right menu-secundario">
+						<div class="box-menu botoes-acessibilidade" id="botoes-acessibilidade">
+							<div class="b-white"><a href="https://www.vlibras.gov.br/" title="O conteúdo desse portal pode ser acessível em Libras usando o VLibras" target="_blank"><span>VLibras</span></a></div>
+							<div class="b-white"><a id="btn-style-branco" data-class="white"><span>C</span></a></div>
+							<div class="b-blue"><a id="btn-style-azul" data-class="blue"><span>C</span></a></div>
+							<div class="b-black"><a id="btn-style-preto" data-class="black" ><span>C</span></a></div>
+							<div class="b-yellow"><a id="btn-style-amarelo"data-class="yellow" ><span>C</span></a></div>
+							<div class="b-font"><a href="#" class="btnDiminuir"><span>A-</span></a></div>
+							<div class="b-font"><a href="#" class="btnPadrao"><span>A</span></a></div>
+							<div class="b-font"><a href="#" class="btnAumentar"><span>A+</span></a></div>
+						</div>
+
+
+
+						<nav id="menu-ueg" class="drop-right menu-ueg">
+							<ul>
+								<li>
+									<form name="f-busca-desktop" class="frm-busca-desktop" action="https://www.ueg.br/aditivo/busca_interna">
+										<input type="text" class="pesquisar" placeholder="pesquisar" name="filtro" value="">
+										<input type="hidden" name="funcao" value="buscar">
+										<a
+											href="javascript:void(0);"
+											class="btn btn-default botao-busca"
+											onclick="$(this).closest('form').submit();">
+											<i class="fa fa-fw fa-search"></i>
+										</a>
+									</form>
+								</li>
+								<li id="li-campus">
+									<a href="#">Câmpus/Unidades<span class="caret"></span></a>
+									<div class="menu-sub">
+	<div>
+		<ul class="link-tab menu-ueg-tabs link-campus">
+			<!--
+			<li class="active">
+				<a data-target="campus">Câmpus</a>
+			</li>
+			-->
+			<li class="active">
+				<a data-target="campus2">Câmpus / Unidades</a>
+			</li>
+			<!--<div class="space-white">-->
+				<!--&nbsp;-->
+				<!--&lt;!&ndash;-->
+				<!--<a  data-target="admcentral">Administração Central</a>-->
+				<!--&ndash;&gt;-->
+			<!--</div>-->
+		</ul>
+
+		<!-- Tab panes -->
+		<div class="menu-ueg-tab-content">
+
+			<div role="tabpanel" class="tab-pane active listagem-densa listagem-campus2" id="campus2">
+				<ul>
+					
+					<li>
+						<span class="campus-agrupador">
+							<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=1">
+								Câmpus Central - Sede: Anápolis - CET - Henrique Santillo
+							</a>
+						</span>
+						
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=2">
+									Unidade Universitária de Anápolis - CSEH - Nelson de Abreu Júnior
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=5">
+									Unidade Universitária de Ceres
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=9">
+									Unidade Universitária de Goianésia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=17">
+									Unidade Universitária de Jaraguá
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=19">
+									Unidade Universitária de Luziânia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=37">
+									Unidade Universitária de Pirenópolis
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=30">
+									Unidade Universitária de Silvânia
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><ul>
+					
+					<li>
+						<span class="campus-agrupador">
+							<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=42">
+								Câmpus Metropolitano - Sede: Aparecida de Goiânia
+							</a>
+						</span>
+						
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=10">
+									Unidade Universitária de Goiânia - ESEFFEGO
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=39">
+									Unidade Universitária de Goiânia - Laranjeiras
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=11">
+									Unidade Universitária de Inhumas
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=41">
+									Unidade Universitária de Senador Canedo
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=38">
+									Unidade Universitária de Trindade
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><ul>
+					
+					<li>
+						<span class="campus-agrupador">
+							<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=7">
+								Câmpus Nordeste - Sede: Formosa
+							</a>
+						</span>
+						
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=4">
+									Unidade Universitária de Campos Belos
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=24">
+									Unidade Universitária de Posse
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><ul>
+					
+					<li>
+						<span class="campus-agrupador">
+							<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=8">
+								Câmpus Cora Coralina - Sede: Cidade de Goiás
+							</a>
+						</span>
+						
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=14">
+									Unidade Universitária de Itaberaí
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=15">
+									Unidade Universitária de Itapuranga
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=18">
+									Unidade Universitária de Jussara
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><ul>
+					
+					<li>
+						<span class="campus-agrupador">
+							<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=21">
+								Câmpus Sul - Sede: Morrinhos
+							</a>
+						</span>
+						
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=3">
+									Unidade Universitária de Caldas Novas
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=12">
+									Unidade Universitária de Ipameri
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=16">
+									Unidade Universitária de Itumbiara
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=22">
+									Unidade Universitária de Pires do Rio
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><ul>
+					
+					<li>
+						<span class="campus-agrupador">
+							<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=25">
+								Câmpus Sudoeste - Sede: Quirinópolis
+							</a>
+						</span>
+						
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=32">
+									Unidade Universitária de Edéia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=33">
+									Unidade Universitária de Jataí
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=34">
+									Unidade Universitária de Mineiros
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=27">
+									Unidade Universitária de Santa Helena de Goiás
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><ul>
+					
+					<li>
+						<span class="campus-agrupador">
+							<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=28">
+								Câmpus Oeste - Sede: São Luís de Montes Belos
+							</a>
+						</span>
+						
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=13">
+									Unidade Universitária de Iporá
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=36">
+									Unidade Universitária de Palmeiras de Goiás
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=26">
+									Unidade Universitária de Sanclerlândia
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul><ul>
+					
+					<li>
+						<span class="campus-agrupador">
+							<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=31">
+								Câmpus Norte - Sede: Uruaçu
+							</a>
+						</span>
+						
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=6">
+									Unidade Universitária de Crixás
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=20">
+									Unidade Universitária de Minaçu
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=35">
+									Unidade Universitária de Niquelândia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=23">
+									Unidade Universitária de Porangatu
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=unidades_v2&variavel=29">
+									Unidade Universitária de São Miguel do Araguaia
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+</div><!-- /menu-sub -->
+								</li>
+								<li id="li-cursos">
+									<a href="#">Cursos<span class="caret"></span></a>
+									
+<div class="menu-sub">
+	<div>
+		<ul class="link-tab menu-ueg-tabs">
+			<li class="active">
+				
+				
+				<a data-target="inst-agrarias">
+					Instituto Acadêmico de Ciências Agrárias e Sustentabilidade
+				</a>
+			</li><li class="">
+				
+				
+				<a data-target="inst-saude">
+					Instituto Acadêmico de Ciências da Saúde e Biológicas
+				</a>
+			</li><li class="">
+				
+				
+				<a data-target="inst-sociais">
+					Instituto Acadêmico de Ciências Sociais Aplicadas
+				</a>
+			</li><li class="">
+				
+				
+				<a data-target="inst-tecnologicas">
+					Instituto Acadêmico de Ciências Tecnológicas
+				</a>
+			</li><li class="">
+				
+				
+				<a data-target="inst-humanas">
+					Instituto Acadêmico de Educação e Licenciaturas
+				</a>
+			</li>
+		</ul>
+
+		<!-- Tab panes GRADUAÇÃO -->
+		<div class="menu-ueg-tab-content">
+			
+			
+			<div role="tabpanel" class="tab-pane listagem-cursos2 listagem-densa active" id="inst-agrarias">
+				
+				<div class="grupo">
+					<div class="titulo-grupo">Graduação</div> 
+					<div class="tipo">
+						
+						<div class="titulo-tipo">BACHARELADO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=4&mod=1">
+									Agronomia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=11&mod=1">
+									Engenharia Agrícola
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=28&mod=1">
+									Engenharia Florestal
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=82&mod=1">
+									Medicina Veterinária
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=22&mod=1">
+									Zootecnia
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">TECNOLÓGICO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=83&mod=3">
+									Agroecologia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=94&mod=3">
+									Agroindústria
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="grupo">
+					<div class="titulo-grupo">Pós-Graduação</div>
+					<div class="tipo">
+						
+						<div class="titulo-tipo">MESTRADO</div>
+						<ul>
+							<li>
+								
+								<a href="http://www.ueg.br/iacas/ppgea/" target="_blank">
+									Engenharia Agrícola
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iacas/mestradopaf" target="_blank">
+									Produção Animal e Forragicultura
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iacas/ppgpv" target="_blank">
+									Produção Vegetal
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			
+			<div role="tabpanel" class="tab-pane listagem-cursos2 listagem-densa" id="inst-saude">
+				
+				<div class="grupo">
+					<div class="titulo-grupo">Graduação</div> 
+					<div class="tipo">
+						
+						<div class="titulo-tipo">BACHARELADO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=92&mod=1">
+									Biomedicina
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=27&mod=1">
+									Enfermagem
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=13&mod=1">
+									Farmácia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=14&mod=1">
+									Fisioterapia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=89&mod=1">
+									Medicina
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">LICENCIATURA</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=8&mod=2">
+									Ciências Biológicas
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=10&mod=2">
+									Educação Física
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">TECNOLÓGICO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=75&mod=3">
+									Estética e Cosmética
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="grupo">
+					<div class="titulo-grupo">Pós-Graduação</div>
+					<div class="tipo">
+						
+						<div class="titulo-tipo">MESTRADO</div>
+						<ul>
+							<li>
+								
+								<a href="http://www.ueg.br/ppgas" target="_blank">
+									Ambiente e Sociedade
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/caps" target="_blank">
+									Ciências Aplicadas a Produtos para Saúde
+								</a>
+							</li><li>
+								
+								<a href="http://ueg.br/ipora/profagua/" target="_blank">
+									Pós-graduação Profissional Nacional em  Rede em Gestão e Regulação de Recursos Hídricos
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iacsb/renac/" target="_blank">
+									Recursos Naturais do Cerrado (RENAC)
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">DOUTORADO</div>
+						<ul>
+							<li>
+								
+								<a href="http://www.ueg.br/iacsb/renac/" target="_blank">
+									Recursos Naturais do Cerrado (RENAC)
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			
+			<div role="tabpanel" class="tab-pane listagem-cursos2 listagem-densa" id="inst-sociais">
+				
+				<div class="grupo">
+					<div class="titulo-grupo">Graduação</div> 
+					<div class="tipo">
+						
+						<div class="titulo-tipo">BACHARELADO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=1&mod=1">
+									Administração
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=6&mod=1">
+									Ciências Contábeis
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=7&mod=1">
+									Ciências Econômicas
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=80&mod=1">
+									Cinema e Audiovisual
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=91&mod=1">
+									Design de Moda
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=87&mod=1">
+									Direito
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=95&mod=1">
+									Turismo
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=90&mod=1">
+									Turismo e Patrimônio
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">TECNOLÓGICO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=33&mod=3">
+									Gastronomia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=35&mod=3">
+									Logística
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=36&mod=3">
+									Mineração
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="grupo">
+					<div class="titulo-grupo">Pós-Graduação</div>
+					<div class="tipo">
+						
+						<div class="titulo-tipo">MESTRADO</div>
+						<ul>
+							<li>
+								
+								<a href="http://www.ueg.br/ppget/" target="_blank">
+									Gestão, Educação e Tecnologias
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/profnit/" target="_blank">
+									Pós-graduação Profissional Nacional em Rede em Propriedade Intelectual e Transferência de Tecnologia para Inovação
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			
+			<div role="tabpanel" class="tab-pane listagem-cursos2 listagem-densa" id="inst-tecnologicas">
+				
+				<div class="grupo">
+					<div class="titulo-grupo">Graduação</div> 
+					<div class="tipo">
+						
+						<div class="titulo-tipo">BACHARELADO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=5&mod=1">
+									Arquitetura e Urbanismo
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=12&mod=1">
+									Engenharia Civil
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=20&mod=1">
+									Química Industrial
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=24&mod=1">
+									Sistemas de Informação
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">LICENCIATURA</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=9&mod=2">
+									Química
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">TECNOLÓGICO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=37&mod=3">
+									Redes de Computadores
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=93&mod=3">
+									Sistemas Para Internet
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="grupo">
+					<div class="titulo-grupo">Pós-Graduação</div>
+					<div class="tipo">
+						
+						<div class="titulo-tipo">MESTRADO</div>
+						<ul>
+							<li>
+								
+								<a href="http://www.ueg.br/iact/ppgq/mestrado/" target="_blank">
+									Ciências Moleculares
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">DOUTORADO</div>
+						<ul>
+							<li>
+								
+								<a href="http://www.ueg.br/iact/ppgq/doutorado/" target="_blank">
+									Química
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			
+			<div role="tabpanel" class="tab-pane listagem-cursos2 listagem-densa" id="inst-humanas">
+				
+				<div class="grupo">
+					<div class="titulo-grupo">Graduação</div> 
+					<div class="tipo">
+						
+						<div class="titulo-tipo">BACHARELADO</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=88&mod=1">
+									Psicologia
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">LICENCIATURA</div>
+						<ul>
+							<li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=29&mod=2">
+									Física
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=15&mod=2">
+									Geografia
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=16&mod=2">
+									História
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=17&mod=2">
+									Letras Português/Inglês
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=18&mod=2">
+									Matemática
+								</a>
+							</li><li>
+								
+								<a href="https://www.ueg.br/exec/consulta_cursos/?funcao=dados_v2&variavel=19&mod=2">
+									Pedagogia
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+				<div class="grupo">
+					<div class="titulo-grupo">Pós-Graduação</div>
+					<div class="tipo">
+						
+						<div class="titulo-tipo">MESTRADO</div>
+						<ul>
+							<li>
+								
+								<a href="http://www.ueg.br/prp/ppge/" target="_blank">
+									Educação
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iael/ppgielt/" target="_blank">
+									Educação, Linguagem e Tecnologias
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iael/ppec/" target="_blank">
+									Ensino de Ciências
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iael/promep/" target="_blank">
+									Estudos Culturais, Memórias e Patrimônios
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iael/ppgeo/" target="_blank">
+									Geografia
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iael/ppghis/" target="_blank">
+									História
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iael/poslli/" target="_blank">
+									Língua, Literatura e Interculturalidade
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iael/teccer/" target="_blank">
+									Territórios e Expressões Culturais no Cerrado
+								</a>
+							</li>
+						</ul>
+					</div><div class="tipo">
+						
+						<div class="titulo-tipo">DOUTORADO</div>
+						<ul>
+							<li>
+								
+								<a href="http://www.ueg.br/iael/ppgielt/" target="_blank">
+									Educação, Linguagem e Tecnologias
+								</a>
+							</li><li>
+								
+								<a href="http://www.ueg.br/iael/teccer/" target="_blank">
+									Territórios e Expressões Culturais no Cerrado
+								</a>
+							</li>
+						</ul>
+					</div>					
+				</div>
+			</div>
+			
+		</div>
+
+	</div>
+</div><!-- /menu-sub -->
+
+								</li>
+							</ul>
+						</nav>
+
+						<ul class="b-geral">
+							<li class="b-aluno">
+								<a href="https://www.ueg.br/exec/servico/alunos"><span>Alunos</span></a>
+							</li>
+							<li class="b-professor">
+								<a href="https://www.ueg.br/exec/servico/professores"><span>Professores</span></a>
+							</li>
+							<li class="b-servidor">
+								<a href="https://www.ueg.br/exec/servico/servidores"><span>Servidores</span></a>
+							</li>
+							<li class="b-visitante">
+								<a href="https://www.ueg.br/acesso-informacao/"><img src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//images/acessoinfop.png" /> <span> Acesso à Informação</span></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+</nav>
+
+
+
+
+
+
+<aside id="ueg-content" class="show-slide">
+	<!--DESKTOP-->
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				
+				<div class="slider-img">
+					<a href="https://www.ueg.br/noticia/73519_ueg_abre_inscricoes_para_cinco_editais_do_programa_capes_global_edu">
+						<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/banner/73519//WhatsApp_Image_2026_10_08_at_16_19_56.jpeg" />
+					</a>
+				</div>
+				<div class="bg-gradient">
+					<div class="overlay-gradient"></div>
+					<div class="container">
+						<div class="row">
+							<div class="text-center slider-text container">
+								<div class="slider-text-inner">
+									<a href="https://www.ueg.br/noticia/73519_ueg_abre_inscricoes_para_cinco_editais_do_programa_capes_global_edu">
+										<h1>UEG abre inscrições para cinco editais do Programa Capes-Global.edu</h1>
+										<h2 class="hidden-xs">Oportunidades contemplam bolsas para mobilidade internacional destinadas a discentes de pós-graduação, docentes, técnicos de laboratório e pesquisadores; inscrições vão até o dia 29 de outubro</h2>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li><li>
+				
+				<div class="slider-img">
+					<a href="https://www.ueg.br/noticia/73485_mestrados_e_doutorados_da_ueg_inscricoes_abertas_para_390_vagas">
+						<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/banner/73485//banner_site_Prancheta_1_1__1_.jpg" />
+					</a>
+				</div>
+				<div class="bg-gradient">
+					<div class="overlay-gradient"></div>
+					<div class="container">
+						<div class="row">
+							<div class="text-center slider-text container">
+								<div class="slider-text-inner">
+									<a href="https://www.ueg.br/noticia/73485_mestrados_e_doutorados_da_ueg_inscricoes_abertas_para_390_vagas">
+										<h1>Mestrados e doutorados da UEG: inscrições abertas para 390 vagas</h1>
+										<h2 class="hidden-xs">Seleção reúne 15 programas de pós-graduação stricto sensu em sete cidades de Goiás; inscrições são gratuitas e seguem até 30 de outubro</h2>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+</aside>
+<aside class="slide-mobile">
+	<!--MOBILE-->
+	<div class="container animate-box">
+		<div class="owl-carousel owl-theme conheca-ueg">
+			<div class="item">
+				
+				<a href="https://www.ueg.br/noticia/73519_ueg_abre_inscricoes_para_cinco_editais_do_programa_capes_global_edu">
+					<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/thumb/73519//Capes.jpg" />
+					<div class="title-conheca">UEG abre inscrições para cinco editais do Programa Capes-Global.edu</div>
+					<div class="description-conheca">Oportunidades contemplam bolsas para mobilidade internacional destinadas a discentes de pós-graduação, docentes, técnicos de laboratório e pesquisadores; inscrições vão até o dia 29 de outubro</div>
+				</a>
+			</div><div class="item">
+				
+				<a href="https://www.ueg.br/noticia/73485_mestrados_e_doutorados_da_ueg_inscricoes_abertas_para_390_vagas">
+					<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/thumb/73485//Miniatura__3_.jpg" />
+					<div class="title-conheca">Mestrados e doutorados da UEG: inscrições abertas para 390 vagas</div>
+					<div class="description-conheca">Seleção reúne 15 programas de pós-graduação stricto sensu em sete cidades de Goiás; inscrições são gratuitas e seguem até 30 de outubro</div>
+				</a>
+			</div>
+		</div>
+	</div>
+</aside>
+
+
+<div class="container">
+	<div class="col-lg-8 col-md-8 no-pad-left">
+
+		<div class="col-lg-12 col-md-12 news-title no-pad-left">
+			<h1>NOTÍCIAS</h1>
+			<a href="https://www.ueg.br/noticia/todas">Ver todas</a>
+		</div>
+
+		<!-- destaque -->
+
+		<div class="col-md-6 col-sm-12 col-xs-12 no-pad-left">
+			
+			<div class="ueg-blog animate-box news1">
+				<a href="https://www.ueg.br/noticia/73458_obras_alteram_canais_de_atendimento_na_administracao_central_da_ueg" class="blog-img-holder">
+					<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/thumb/73458//UEG_Informa_400.jpg" />
+				</a>
+				<div class="blog-text">
+					<span class="posted_on">14/08/2026</span>
+					<h1>
+						<a href="https://www.ueg.br/noticia/73458_obras_alteram_canais_de_atendimento_na_administracao_central_da_ueg">							
+							Obras alteram canais de atendimento na Administração Central da UEG
+						</a>
+					</h1>
+					<p class="hidden-xs hidden-sm">Em razão das obras de reforma dos banheiros dos Blocos 1 e 2 da Administração Central, os canais de atendimento da Administração Central da UEG serão alterados</p>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- /destaque -->
+
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			
+			<div class="ueg-blog animate-box news2">
+				<a href="https://www.ueg.br/noticia/73547_feriado_e_recesso_academico_e_administrativo_alteram_expediente_na_ueg" class="blog-img-holder">
+					<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/thumb/73547//UEG_Informa_400.jpg" />
+				</a>
+				<div class="blog-text">
+					<span class="posted_on">08/10/2026</span>
+					<h1>
+						<a href="https://www.ueg.br/noticia/73547_feriado_e_recesso_academico_e_administrativo_alteram_expediente_na_ueg">							
+							Feriado e recesso acadêmico e administrativo alteram expediente na UEG
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div><div class="col-md-3 col-sm-6 col-xs-12">
+			
+			<div class="ueg-blog animate-box news2">
+				<a href="https://www.ueg.br/noticia/73529_ueg_tem_tres_projetos_finalistas_no_trofeu_seriema" class="blog-img-holder">
+					<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/thumb/73529//1791251477903816.jpg" />
+				</a>
+				<div class="blog-text">
+					<span class="posted_on">05/10/2026</span>
+					<h1>
+						<a href="https://www.ueg.br/noticia/73529_ueg_tem_tres_projetos_finalistas_no_trofeu_seriema">							
+							UEG tem três projetos finalistas no Troféu Seriema
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div><div class="col-md-3 col-sm-6 col-xs-12">
+			
+			<div class="ueg-blog animate-box news2">
+				<a href="https://www.ueg.br/noticia/73516_ultimo_dia_para_se_inscrever_no_vestibular_de_medicina_da_ueg" class="blog-img-holder">
+					<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/thumb/73516//Mini__2__jpg_400.jpg" />
+				</a>
+				<div class="blog-text">
+					<span class="posted_on">05/10/2026</span>
+					<h1>
+						<a href="https://www.ueg.br/noticia/73516_ultimo_dia_para_se_inscrever_no_vestibular_de_medicina_da_ueg">							
+							Último dia para se inscrever no Vestibular de Medicina da UEG
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div><div class="col-md-3 col-sm-6 col-xs-12">
+			
+			<div class="ueg-blog animate-box news2">
+				<a href="https://www.ueg.br/noticia/73411_projeto_de_docente_da_ueg_incentiva_envelhecimento_ativo" class="blog-img-holder">
+					<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/noticias/thumb/73411//Mini_Made.jpg" />
+				</a>
+				<div class="blog-text">
+					<span class="posted_on">05/10/2026</span>
+					<h1>
+						<a href="https://www.ueg.br/noticia/73411_projeto_de_docente_da_ueg_incentiva_envelhecimento_ativo">							
+							Projeto de docente da UEG incentiva envelhecimento ativo
+						</a>
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="col-lg-4 col-md-4 box-event">
+		<!-- eventos -->
+		<div>
+			
+			<div class="eventos">
+	<div class="col-lg-12 col-md-12 news-title h-title">
+		<h1>EVENTOS</h1> <a href="https://www.ueg.br/exec/evento/todos">Ver todos</a>
+	</div>
+
+	<div class="col-md-12 animate-box">
+		
+		<a href="https://www.ueg.br/exec/evento/917_10_ordf_semana_de_inverno">
+			<div class="ueg-event h-title">
+				<div class="date text-center">
+					<span>
+						22<br>
+						JUN
+					</span>
+				</div>
+				<h1>10ª Semana de Inverno</h1>
+			</div>
+		</a>
+	</div><div class="col-md-12 animate-box">
+		
+		<a href="https://www.ueg.br/exec/evento/916_i_mostra_latino_americana_de_cinema">
+			<div class="ueg-event h-title">
+				<div class="date text-center">
+					<span>
+						17<br>
+						JUN
+					</span>
+				</div>
+				<h1>I Mostra Latino-Americana de Cinema</h1>
+			</div>
+		</a>
+	</div><div class="col-md-12 animate-box">
+		
+		<a href="https://www.ueg.br/exec/evento/895_v_encontro_das_escolas_de_cinema_do_brasil_central">
+			<div class="ueg-event h-title">
+				<div class="date text-center">
+					<span>
+						16<br>
+						JUN
+					</span>
+				</div>
+				<h1>V Encontro das Escolas de Cinema do Brasil Central</h1>
+			</div>
+		</a>
+	</div>
+
+	
+</div>
+
+		</div>
+
+		<!-- editais -->
+		<div>
+			
+			<div class="editais">
+	<div class="col-lg-12 col-md-12 news-title h-title">
+		<h1>EDITAIS</h1> <a href="http://www.ueg.br//exec/edital/todos">Ver todos</a>
+	</div>
+	<div class="col-md-12 animate-box">
+		<div class="ueg-editais edital-pg-inicial">
+			
+			<a href="http://www.ueg.br//exec/edital/55675">
+				<span class="posted_on">10/09/2026</span>
+				<span class="edital-site">- Licitação</span>
+				<div class="edital-titulo">
+					Edital
+					nº V 02/2026
+				</div>
+				<p class="edital-descricao">
+					Edital V 02
+				</p>
+			</a>
+		</div><div class="ueg-editais edital-pg-inicial">
+			
+			<a href="http://www.ueg.br//exec/edital/55560">
+				<span class="posted_on">24/08/2026</span>
+				<span class="edital-site">- Graduação</span>
+				<div class="edital-titulo">
+					Edital
+					nº 35/2026
+				</div>
+				<p class="edital-descricao">
+					Edital de Convocação ENEM 2026/2 - 3ª Chamada
+				</p>
+			</a>
+		</div><div class="ueg-editais edital-pg-inicial">
+			
+			<a href="http://www.ueg.br//exec/edital/55509">
+				<span class="posted_on">17/08/2026</span>
+				<span class="edital-site">- Graduação</span>
+				<div class="edital-titulo">
+					Edital
+					nº 34/2026
+				</div>
+				<p class="edital-descricao">
+					Edital de Convocação ENEM 2026/2 - 2ª Chamada
+				</p>
+			</a>
+		</div>
+	</div>
+</div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="col-lg-12 col-md-12 no-pad-left news-title">
+		<h1>NOSSOS DESTAQUES</h1>
+		<a href="https://www.ueg.br/destaque/conheca_a_ueg">Ver todos</a>
+	</div>
+</div>
+
+<!-- Carousel -->
+<div class="container animate-box">
+	<div class="owl-carousel owl-theme conheca-ueg">
+		<div class="item">
+						
+			<a href="https://www.ueg.br/referencia/13360">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/destaque/thumb/13361//pos_tecnico.jpg" />
+				<div class="title-conheca">Informações sobre o MBA</div>
+				<div class="description-conheca">MBA em Gestão, Projetos e Desenvolvimento Humano de IES</div>
+			</a>
+		</div><div class="item">
+						
+			<a href="http://www.ueg.br/calendario">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/destaque/thumb/11231//calendario_academico.jpeg" />
+				<div class="title-conheca">Calendário Acadêmico</div>
+				<div class="description-conheca">Veja aqui as principais datas e a programação acadêmica da Universidade ao longo do ano</div>
+			</a>
+		</div><div class="item">
+						
+			<a href="https://www.ueg.br/conteudo/22914/">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/destaque/thumb/11707//Listta_Telefonica_Destaque.jpeg" />
+				<div class="title-conheca">Lista Telefônica</div>
+				<div class="description-conheca">Clique aqui e acesse nossa lista telefônica completa</div>
+			</a>
+		</div><div class="item">
+						
+			<a href="http://www.cear.ueg.br" target="_blank">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/destaque/thumb/10283//cear.jpg" />
+				<div class="title-conheca">CEAR</div>
+				<div class="description-conheca">O CEAR leva ensino público, gratuito e de qualidade a todos os goianos através das plataformas digitais</div>
+			</a>
+		</div><div class="item">
+						
+			<a href="https://emec.mec.gov.br/emec/consulta-cadastro/detalhamento/d96957f455f6405d14c6542552b0f6eb/NDc=" target="_blank">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/destaque/thumb/12402//banner_emec.jpg" />
+				<div class="title-conheca">e-MEC</div>
+				<div class="description-conheca">Consulte aqui o cadastro da instituição no sistema e-MEC</div>
+			</a>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="col-lg-12 col-md-12 no-pad-left news-title">
+		<h1>ESTUDE CONOSCO</h1> <a href="https://www.ueg.br/intermediario/13660_estude_conosco">Ver todos</a>
+	</div>
+</div>
+
+<div class="container animate-box">
+	<div class="owl-theme owl-c-estude-conosco">
+		<div class="item">
+			
+			<a href="http://www.ueg.br/exec/consulta_cursos/lista">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/portal_ueg_306/estude_conosco/thumb/9348/estude_graduacao2.jpg" />
+			</a>
+		</div><div class="item">
+			
+			<a href="http://www.ueg.br/noticia/56750_ueg_oferta_cursos_de_especializacao_lato_sensu">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/portal_ueg_306/estude_conosco/thumb/9349/estude_especializacao2.jpg" />
+			</a>
+		</div><div class="item">
+			
+			<a href="http://www.ueg.br/referencia/10533">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/portal_ueg_306/estude_conosco/thumb/9351/estude_mestrado2.jpg" />
+			</a>
+		</div><div class="item">
+			
+			<a href="http://www.cear.ueg.br/">
+				
+				<img src="https://cdn.ueg.edu.br/imagens/universidade_estadual_de_goias_306/estude_conosco/thumb/9352/ead.png" />
+			</a>
+		</div>
+	</div>
+</div>
+<footer id="ueg-footer" role="contentinfo">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row row-pb-md">
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ueg-widget">
+				<h1>Institucional</h1>
+				<ul class="ueg-footer-links">
+					<li><a href="https://www.ueg.br/dgi" target="_blank">DGI</a></li>
+					<li><a href="http://www.nucleodeselecao.ueg.br/" target="_blank">Núcleo de Seleção</a></li>
+					<li><a href="https://www.ueg.br/avaliacaoinstitucional" target="_blank">Avaliação Institucional</a></li>
+					<li><a href="https://www.ueg.br/arex" target="_blank">Relações Externas</a></li>
+					<li><a href="https://www.ueg.br/convenios" target="_blank">Convênios</a></li>
+					<li><a href="https://www.ueg.br/inovacentro" target="_blank">Agência de Inovação</a></li>
+					<li><a href="https://www.ueg.br/cear" target="_blank">CEAR</a></li>
+					<li><a href="https://www.ueg.br/fundacoes" target="_blank">Fundações</a></li>
+				</ul>
+			</div>
+
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ueg-widget">
+				<h1>Serviços</h1>
+				<ul class="ueg-footer-links">
+					<li><a href="http://mail.ueg.br" target="_blank">Webmail</a></li>
+					<li><a href="https://www.adms.ueg.br/boletos/" target="_blank">Boletos de Serviços</a></li>
+					<li><a href="https://www.ueg.br/exec/consulta_processos/?funcao=publico&variavel=1">Consulta de processos</a></li>
+					<li><a href="https://www.ueg.br/contratos" target="_blank">Contratos</a></li>
+					<li><a href="https://www.ueg.br/conteudo/14508/">Chamamento Público</a></li>
+					<li><a href="https://www.ueg.br/conteudo/14507/">Licitação</a></li>
+					<li><a href="https://www.anais.ueg.br/" target="_blank">Anais de eventos</a></li>
+					<li><a href="https://www.inscricao.ueg.br//inscrito/login/" target="_blank">Certificados</a></li>
+					<li><a href="https://www.ueg.br/exec/edital/todos">Editais</a></li>
+					<li><a href="https://www.saff.ueg.br/index.php?modulo=login" target="_blank">SAFF</a></li>
+				</ul>
+			</div>
+
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ueg-widget">
+				<h1>Comunicação</h1>
+				<ul class="ueg-footer-links">
+					<li><a href="https://www.go.gov.br/servicos-digitais/cge/nova-ouvidoria/nova-manifestacao?orgao=47" target="_blank">Ouvidoria</a></li>
+					<li><a href="https://www.go.gov.br/servicos-digitais/cge/nova-ouvidoria/nova-manifestacao/tela-lai?orgao=47&tipo_manifestacao=7" target="_blank">e-SIC</a></li>
+					<li><a href="https://www.ueg.br/conteudo/22159">Acesso a informação</a></li>
+					<li><a href="//www.ueg.br/radio" target="_blank">Rádio UEG Educativa</a></li>
+					<li><a href="//www.ueg.br/tv" target="_blank">UEG TV</a></li>
+					<li><a href="https://www.ueg.br/exec/servico/comunicacao">Comunicação Setorial</a></li>
+					<li><a href="https://www.ueg.br/conteudo/22914_lista_telefonica">Lista telefônica</a></li>
+					<li><a href="https://www.ueg.br/exec/agenda_autoridades/?funcao=tela_inicial">Agenda de Autoridades</a></li>
+					<li><a href="https://www.ueg.br/exec/revista/?funcao=tela_inicial">Publicações</a></li>
+					<li><a href="https://www.ueg.br/conteudo/14509/">Fale conosco</a></li>
+				</ul>
+			</div>
+
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 ueg-widget">
+				<h1>Nos Acompanhe</h1>
+				<ul class="ueg-footer-links">
+					<li><a href="https://www.facebook.com/uegoficial?ref=hl" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+					<li><a href="https://www.flickr.com/photos/uegoficial/albums" target="_blank"><i class="fa fa-flickr" aria-hidden="true"></i> Flickr</a></li>
+					<li><a href="https://www.youtube.com/uegoficial/" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i> Youtube</a></li>
+					<li><a href="https://www.instagram.com/uegoficial/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="copyright"> Universidade Estadual de Goiás. Todos os direitos reservados.</div>
+</footer>
+</div>
+
+<a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- Modernizr JS -->
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/modernizr.min.000262.js" async></script>
+<!-- FOR IE9 below -->
+<!--[if lt IE 9]>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/respond.min.js"></script>
+<![endif]-->
+
+
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery.min.000331.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery-migrate-3.0.0.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery.waypoints.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery.stellar.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/owl.carousel.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery.flexslider-min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery.countTo.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery.magnific-popup.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/magnific-popup-options.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/simplyCountdown.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/bootstrap.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/js.cookie.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/cbpHorizontalMenu.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/jquery.flexnav.min.js"></script>
+
+
+<!--<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/dist/assets.min.js"></script>-->
+
+<script src="https://cdn.ueg.edu.br///cms_visualizador//interface/_js/controlePesquisa.js"></script>
+<script src="https://cdn.ueg.edu.br///cms_visualizador//interface/_js/js_util.js"></script>
+<script src="https://cdn.ueg.edu.br///cms_visualizador//interface/_js/fancybox/lib/jquery.mousewheel.pack.js"></script>
+<script src="https://cdn.ueg.edu.br///cms_visualizador//interface/_js/fancybox/source/jquery.fancybox.pack.js"></script>
+
+<!-- Main -->
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/dist/site.min.js"></script>
+<script src="https://cdn.ueg.edu.br//cms_visualizador/interface/modulos//portal//geral//js/main2.js?v=1.8"></script>
+
+<script src="https://cdn.ueg.edu.br///cms_visualizador//interface/_js/hotkeys.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        // Chrome || IE
+        if((navigator.userAgent.indexOf("Chrome") != -1) || ((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true ))){
+            hotkeys('alt+1,alt+2,alt+3,alt+4', function (event, handler){
+                event.preventDefault();
+
+                switch (handler.key) {
+                    case 'alt+1': scrollContent(event);
+                        break;
+                    case 'alt+2': scrollMenu(event);
+                        break;
+                    case 'alt+3': scrollSearch(event);
+                        break;
+                    case 'alt+4': scrollBottom(event);
+                        break;
+                }
+            });
+        }
+        else { // Others
+            hotkeys('alt+shift+1,alt+shift+2,alt+shift+3,alt+shift+4', function (event, handler) {
+                event.preventDefault();
+
+                switch (handler.key) {
+                    case 'alt+shift+1':
+                        scrollContent(event);
+                        break;
+                    case 'alt+shift+2':
+                        scrollMenu(event);
+                        break;
+                    case 'alt+shift+3':
+                        scrollSearch(event);
+                        break;
+                    case 'alt+shift+4':
+                        scrollBottom(event);
+                        break;
+                }
+            });
+        }
+    });
+</script>
+
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+
+</body>
+</html>
