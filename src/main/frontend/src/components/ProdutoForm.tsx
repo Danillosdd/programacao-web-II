@@ -46,14 +46,18 @@ function ProdutoForm({ onProdutoSalvo, produtoEditando }: ProdutoFormProps) {
         placeholder="Nome do Produto"
         required
       />
-      <input
-        type="number"
-        step="0.01"
-        value={preco}
-        onChange={(e) => setPreco(e.target.value)}
-        placeholder="Preço"
-        required
-      />
+      <div style={{ display: "flex", alignItems: "center", gap: "8px", background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: "6px", padding: "0 12px", marginBottom: "12px" }}>
+        <span style={{ color: "var(--text)", fontWeight: "bold" }}>R$</span>
+        <input
+          type="number"
+          step="0.01"
+          value={preco}
+          onChange={(e) => setPreco(e.target.value)}
+          placeholder="0,00"
+          required
+          style={{ border: "none", outline: "none", padding: "10px 0", width: "100%", background: "transparent", color: "var(--text-h)" }}
+        />
+      </div>
       <button type="submit">
         {produtoEditando ? "Salvar alterações" : "Cadastrar"}
       </button>
