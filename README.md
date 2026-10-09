@@ -21,6 +21,14 @@ A aplicação conta com as seguintes entidades, seguindo o padrão de projeto `C
 2. **Permissões**: Controle e listagem de permissões e descrições do sistema.
 3. **Produtos (Entidade de Interesse)**: Entidade escolhida pelo aluno para desenvolvimento das funcionalidades próprias. Possui validações e regras de negócio próprias definidas na camada de serviço (não é permitido produtos com preço negativo ou com nome vazio).
 
+### 🌟 Diferenciais da Entrega
+
+Durante o desenvolvimento do Front-end, o projeto foi expandido para apresentar uma experiência de usuário (UX) premium:
+- **Design System Customizado**: Ao invés de CSS padrão, o sistema conta com uma interface moderna com cartões (`cards`), botões estilizados, e modo escuro sutil de alto contraste.
+- **Menu de Navegação em Abas (Tabs)**: O sistema original possuía os 3 CRUDs na mesma tela. Para esta entrega, foi desenvolvido um componente de abas interativo, garantindo navegação fluída sem recarregamento da página.
+- **Tratamento de Máscara de Moedas**: O cadastro de Produtos possui campo de entrada que converte transparentemente o formato brasileiro (com vírgula) para decimal na comunicação com a API.
+- **UX de Formulários**: Adição de validações de exclusão sem pop-ups intrusivos e limpeza automática dos estados para evitar cadastros duplicados acidentais.
+
 ## 🛠️ Tecnologias Utilizadas
 
 ### Back-end
