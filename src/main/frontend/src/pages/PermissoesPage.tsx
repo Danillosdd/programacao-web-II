@@ -56,7 +56,9 @@ function PermissoesPage() {
       {erro && <p style={{ color: "red" }}>{erro}</p>}
 
       {!loading && !erro && (
-        <ul>
+        <div style={{ marginTop: "24px" }}>
+          <h3>Lista de Permissões</h3>
+          <ul>
           {permissoes.map((permissao) => (
             <li key={permissao.id}>
               <div className="item-info">
@@ -70,6 +72,7 @@ function PermissoesPage() {
             </li>
           ))}
         </ul>
+        </div>
       )}
     </div>
   );

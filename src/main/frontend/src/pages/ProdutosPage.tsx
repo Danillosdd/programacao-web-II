@@ -56,7 +56,9 @@ function ProdutosPage() {
       {erro && <p style={{ color: "red" }}>{erro}</p>}
 
       {!loading && !erro && (
-        <ul>
+        <div style={{ marginTop: "24px" }}>
+          <h3>Lista de Produtos</h3>
+          <ul>
           {produtos.map((produto) => (
             <li key={produto.id}>
               <div className="item-info">
@@ -70,6 +72,7 @@ function ProdutosPage() {
             </li>
           ))}
         </ul>
+        </div>
       )}
     </div>
   );

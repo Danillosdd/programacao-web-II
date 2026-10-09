@@ -57,7 +57,9 @@ function UsuariosPage() {
       {erro && <p style={{ color: "red" }}>{erro}</p>}
 
       {!loading && !erro && (
-        <ul>
+        <div style={{ marginTop: "24px" }}>
+          <h3>Lista de Usuários</h3>
+          <ul>
           {usuarios.map((usuario) => (
             <UsuarioItem 
               key={usuario.id} 
@@ -67,6 +69,7 @@ function UsuariosPage() {
             />
           ))}
         </ul>
+        </div>
       )}
     </div>
   );
