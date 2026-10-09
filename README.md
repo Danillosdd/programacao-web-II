@@ -1,6 +1,11 @@
 # Avaliação N1 - Programação Web II
 
-Este repositório contém o projeto Fullstack desenvolvido para a disciplina de **Programação Web II** (Avaliação N1).
+Este repositório contém o projeto Fullstack desenvolvido como parte da Avaliação N1.
+
+**Universidade:** Universidade Estadual de Goiás (UEG)  
+**Disciplina:** Programação Web II  
+**Professor:** Braully  
+**Aluno:** Danillo Araújo de Paiva  
 
 O projeto implementa uma arquitetura em camadas no Backend utilizando Spring Boot e um Frontend SPA em React, com comunicação via API REST (JSON). A aplicação consiste em um sistema completo de operações CRUD (Criar, Ler, Atualizar, Excluir).
 
