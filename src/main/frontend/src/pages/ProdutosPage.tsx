@@ -29,13 +29,11 @@ function ProdutosPage() {
   }, []);
 
   async function excluir(id: number) {
-    if (window.confirm("Tem certeza que deseja excluir?")) {
-      try {
-        await api.delete(`/produtos/${id}`);
-        carregarProdutos();
-      } catch (error) {
-        alert("Erro ao excluir produto.");
-      }
+    try {
+      await api.delete(`/produtos/${id}`);
+      carregarProdutos();
+    } catch (error) {
+      alert("Erro ao excluir produto.");
     }
   }
 

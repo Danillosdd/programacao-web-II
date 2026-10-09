@@ -29,13 +29,11 @@ function PermissoesPage() {
   }, []);
 
   async function excluir(id: number) {
-    if (window.confirm("Tem certeza que deseja excluir?")) {
-      try {
-        await api.delete(`/permissoes/${id}`);
-        carregarPermissoes();
-      } catch (error) {
-        alert("Erro ao excluir permissão.");
-      }
+    try {
+      await api.delete(`/permissoes/${id}`);
+      carregarPermissoes();
+    } catch (error) {
+      alert("Erro ao excluir permissão.");
     }
   }
 

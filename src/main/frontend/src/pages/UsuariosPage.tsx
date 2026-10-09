@@ -30,13 +30,11 @@ function UsuariosPage() {
   }, []);
 
   async function excluir(id: number) {
-    if (window.confirm("Tem certeza que deseja excluir?")) {
-      try {
-        await api.delete(`/usuarios/${id}`);
-        carregarUsuarios();
-      } catch (error) {
-        alert("Erro ao excluir usuário.");
-      }
+    try {
+      await api.delete(`/usuarios/${id}`);
+      carregarUsuarios();
+    } catch (error) {
+      alert("Erro ao excluir usuário.");
     }
   }
 
