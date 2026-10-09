@@ -50,7 +50,14 @@ Na raiz do projeto (onde está o `pom.xml`), você pode inicializar a aplicaçã
 ```bash
 ./mvnw spring-boot:run
 ```
-*(O banco de dados H2 subirá automaticamente na porta 8080)*
+*(O servidor do Spring Boot e o banco de dados H2 subirão automaticamente na porta 8081)*
+
+### 🗄️ Acesso ao Banco de Dados (H2 Console)
+Para visualizar o banco de dados e as tabelas criadas:
+1. Com o back-end rodando, acesse no navegador: `http://localhost:8081/h2-console`
+2. **JDBC URL:** `jdbc:h2:file:./database.db`
+3. **User Name:** `sa`
+4. **Password:** *(deixe em branco)*
 
 ### Executando o Front-end
 Para inicializar o React, navegue até a pasta `src/main/frontend` e utilize o NPM:
