@@ -62,8 +62,8 @@ function ProdutosPage() {
           {produtos.map((produto) => (
             <li key={produto.id}>
               <div className="item-info">
-                <span className="item-title">{produto.nome}</span>
-                <span className="item-subtitle">R$ {produto.preco.toFixed(2).replace(".", ",")}</span>
+                <span className="item-title"><strong>Produto:</strong> {produto.nome}</span>
+                <span className="item-subtitle"><strong>Preço:</strong> R$ {produto.preco.toFixed(2).replace(".", ",")}</span>
               </div>
               <div className="item-actions">
                 <button className="btn-edit" onClick={() => setEditando(produto)}>Editar</button>

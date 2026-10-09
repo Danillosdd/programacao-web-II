@@ -62,8 +62,8 @@ function PermissoesPage() {
           {permissoes.map((permissao) => (
             <li key={permissao.id}>
               <div className="item-info">
-                <span className="item-title">{permissao.nome}</span>
-                <span className="item-subtitle">{permissao.descricao}</span>
+                <span className="item-title"><strong>Permissão:</strong> {permissao.nome}</span>
+                <span className="item-subtitle"><strong>Descrição:</strong> {permissao.descricao}</span>
               </div>
               <div className="item-actions">
                 <button className="btn-edit" onClick={() => setEditando(permissao)}>Editar</button>
