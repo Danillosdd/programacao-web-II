@@ -33,6 +33,10 @@ function PermissaoForm({ onPermissaoSalva, permissaoEditando }: PermissaoFormPro
         await api.post("/permissoes", dados);
       }
       onPermissaoSalva();
+      if (!permissaoEditando) {
+        setNome("");
+        setDescricao("");
+      }
     } catch (error) {
       alert("Erro ao salvar permissão.");
     }

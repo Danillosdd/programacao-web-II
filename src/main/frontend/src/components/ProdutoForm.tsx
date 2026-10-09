@@ -24,7 +24,7 @@ function ProdutoForm({ onProdutoSalvo, produtoEditando }: ProdutoFormProps) {
 
   async function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    const dados = { nome, preco: parseFloat(preco) };
+    const dados = { nome, preco: parseFloat(preco.replace(",", ".")) };
 
     try {
       if (produtoEditando) {
@@ -33,6 +33,10 @@ function ProdutoForm({ onProdutoSalvo, produtoEditando }: ProdutoFormProps) {
         await api.post("/produtos", dados);
       }
       onProdutoSalvo();
+      if (!produtoEditando) {
+        setNome("");
+        setPreco("");
+      }
     } catch (error) {
       alert("Erro ao salvar produto.");
     }
@@ -49,8 +53,7 @@ function ProdutoForm({ onProdutoSalvo, produtoEditando }: ProdutoFormProps) {
       <div style={{ display: "flex", alignItems: "center", gap: "8px", background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: "6px", padding: "0 12px", marginBottom: "12px" }}>
         <span style={{ color: "var(--text)", fontWeight: "bold" }}>R$</span>
         <input
-          type="number"
-          step="0.01"
+          type="text"
           value={preco}
           onChange={(e) => setPreco(e.target.value)}
           placeholder="0,00"

@@ -36,6 +36,11 @@ function UsuarioForm({ onUsuarioSalvo, usuarioEditando }: UsuarioFormProps) {
         await api.post("/usuarios", dados);
       }
       onUsuarioSalvo();
+      if (!usuarioEditando) {
+        setNome("");
+        setUsername("");
+        setEmail("");
+      }
     } catch (error) {
       alert("Erro ao salvar usuário.");
     }
