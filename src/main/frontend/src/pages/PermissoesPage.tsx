@@ -58,10 +58,15 @@ function PermissoesPage() {
       {!loading && !erro && (
         <ul>
           {permissoes.map((permissao) => (
-            <li key={permissao.id} style={{ marginBottom: "10px" }}>
-              <strong>{permissao.nome}</strong> - {permissao.descricao}
-              <button onClick={() => setEditando(permissao)} style={{ marginLeft: "10px" }}>Editar</button>
-              <button onClick={() => excluir(permissao.id)} style={{ marginLeft: "5px" }}>Excluir</button>
+            <li key={permissao.id}>
+              <div className="item-info">
+                <span className="item-title">{permissao.nome}</span>
+                <span className="item-subtitle">{permissao.descricao}</span>
+              </div>
+              <div className="item-actions">
+                <button className="btn-edit" onClick={() => setEditando(permissao)}>Editar</button>
+                <button className="btn-delete" onClick={() => excluir(permissao.id)}>Excluir</button>
+              </div>
             </li>
           ))}
         </ul>

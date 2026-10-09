@@ -59,11 +59,12 @@ function UsuariosPage() {
       {!loading && !erro && (
         <ul>
           {usuarios.map((usuario) => (
-            <li key={usuario.id} style={{ marginBottom: "10px" }}>
-              <UsuarioItem usuario={usuario} />
-              <button onClick={() => setEditando(usuario)} style={{ marginLeft: "10px" }}>Editar</button>
-              <button onClick={() => excluir(usuario.id)} style={{ marginLeft: "5px" }}>Excluir</button>
-            </li>
+            <UsuarioItem 
+              key={usuario.id} 
+              usuario={usuario} 
+              onEdit={setEditando} 
+              onDelete={excluir} 
+            />
           ))}
         </ul>
       )}

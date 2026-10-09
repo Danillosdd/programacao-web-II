@@ -58,10 +58,15 @@ function ProdutosPage() {
       {!loading && !erro && (
         <ul>
           {produtos.map((produto) => (
-            <li key={produto.id} style={{ marginBottom: "10px" }}>
-              <strong>{produto.nome}</strong> - R$ {produto.preco.toFixed(2)}
-              <button onClick={() => setEditando(produto)} style={{ marginLeft: "10px" }}>Editar</button>
-              <button onClick={() => excluir(produto.id)} style={{ marginLeft: "5px" }}>Excluir</button>
+            <li key={produto.id}>
+              <div className="item-info">
+                <span className="item-title">{produto.nome}</span>
+                <span className="item-subtitle">R$ {produto.preco.toFixed(2).replace(".", ",")}</span>
+              </div>
+              <div className="item-actions">
+                <button className="btn-edit" onClick={() => setEditando(produto)}>Editar</button>
+                <button className="btn-delete" onClick={() => excluir(produto.id)}>Excluir</button>
+              </div>
             </li>
           ))}
         </ul>

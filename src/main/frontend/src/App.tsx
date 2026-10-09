@@ -4,17 +4,17 @@ import ProdutosPage from "./pages/ProdutosPage";
 
 function App() {
   return (
-    <div style={{ padding: "20px", fontFamily: "sans-serif" }}>
+    <div>
       <h1>Sistema Completo - CRUD</h1>
       
-      <div style={{ display: "flex", gap: "40px" }}>
-        <div style={{ flex: 1 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "24px" }}>
+        <div className="page-container">
           <UsuariosPage />
         </div>
-        <div style={{ flex: 1 }}>
+        <div className="page-container">
           <PermissoesPage />
         </div>
-        <div style={{ flex: 1 }}>
+        <div className="page-container">
           <ProdutosPage />
         </div>
       </div>
