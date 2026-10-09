@@ -223,3 +223,35 @@ li:hover {
   background: rgba(239, 68, 68, 0.1);
   border-radius: 6px;
 }
+
+/* Tabs Menu */
+.menu-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.tab-btn {
+  background-color: var(--bg-card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tab-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.tab-btn.active {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
