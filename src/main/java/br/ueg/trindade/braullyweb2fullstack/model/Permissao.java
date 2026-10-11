@@ -1,9 +1,13 @@
 package br.ueg.trindade.braullyweb2fullstack.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class Permissao {
@@ -13,6 +17,10 @@ public class Permissao {
     private Long id;
     private String nome;
     private String descricao;
+
+    @ManyToMany(mappedBy = "permissoes")
+    @JsonBackReference
+    private Set<Usuario> usuarios = new HashSet<>();
 
     public Permissao() {}
 
@@ -30,4 +38,7 @@ public class Permissao {
 
     public String getDescricao() { return descricao; }
     public void setDescricao(String descricao) { this.descricao = descricao; }
+
+    public Set<Usuario> getUsuarios() { return usuarios; }
+    public void setUsuarios(Set<Usuario> usuarios) { this.usuarios = usuarios; }
 }

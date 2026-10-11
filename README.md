@@ -20,6 +20,7 @@ A aplicação conta com as seguintes entidades, seguindo o padrão de projeto `C
 1. **Usuários**: Cadastro de usuários, com controle de campos (nome, username, email, senha).
 2. **Permissões**: Controle e listagem de permissões e descrições do sistema.
 3. **Produtos (Entidade de Interesse)**: Entidade escolhida pelo aluno para desenvolvimento das funcionalidades próprias. Possui validações e regras de negócio próprias definidas na camada de serviço (não é permitido produtos com preço negativo ou com nome vazio).
+4. **Relacionamento Muitos-para-Muitos (Usuario ↔ Permissao)**: Implementação de `@ManyToMany` com `@JoinTable` (`usuario_permissao`), serialização com `@JsonManagedReference` e `@JsonBackReference` evitando recursão infinita, além de tela interativa para vincular/desvincular permissões aos usuários (`GET/PUT /api/usuarios/{id}/permissoes`).
 
 ### 🌟 Diferenciais da Entrega
 

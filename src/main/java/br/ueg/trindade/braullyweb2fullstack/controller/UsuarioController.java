@@ -39,4 +39,16 @@ public class UsuarioController {
     public void deleteUsuario(@PathVariable Long id) {
         usuarioService.excluir(id);
     }
+
+    @GetMapping("/usuarios/{id}/permissoes")
+    public Usuario getPermissoes(@PathVariable Long id) {
+        return usuarioService.buscarPorId(id);
+    }
+
+    @PutMapping("/usuarios/{id}/permissoes")
+    public Usuario atualizarPermissoes(
+            @PathVariable Long id,
+            @RequestBody List<Long> idsPermissoes) {
+        return usuarioService.atribuirPermissoes(id, idsPermissoes);
+    }
 }

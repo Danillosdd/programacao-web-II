@@ -2,6 +2,7 @@ import { useState } from "react";
 import UsuariosPage from "./pages/UsuariosPage";
 import PermissoesPage from "./pages/PermissoesPage";
 import ProdutosPage from "./pages/ProdutosPage";
+import UsuarioPermissoesPage from "./pages/UsuarioPermissoesPage";
 
 function App() {
   const [abaAtiva, setAbaAtiva] = useState("usuarios");
@@ -24,6 +25,12 @@ function App() {
           Permissões
         </button>
         <button 
+          className={`tab-btn ${abaAtiva === "atribuir" ? "active" : ""}`}
+          onClick={() => setAbaAtiva("atribuir")}
+        >
+          Atribuir Permissões
+        </button>
+        <button 
           className={`tab-btn ${abaAtiva === "produtos" ? "active" : ""}`}
           onClick={() => setAbaAtiva("produtos")}
         >
@@ -34,6 +41,7 @@ function App() {
       <div className="page-container">
         {abaAtiva === "usuarios" && <UsuariosPage />}
         {abaAtiva === "permissoes" && <PermissoesPage />}
+        {abaAtiva === "atribuir" && <UsuarioPermissoesPage />}
         {abaAtiva === "produtos" && <ProdutosPage />}
       </div>
     </div>
