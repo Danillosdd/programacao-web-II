@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import api from "../services/api";
 import type { Permissao } from "../types/Permissao";
 import PermissaoForm from "../components/PermissaoForm";
@@ -60,7 +61,11 @@ function PermissoesPage() {
           {permissoes.map((permissao) => (
             <li key={permissao.id}>
               <div className="item-info">
-                <span className="item-title"><strong>Permissão:</strong> {permissao.nome}</span>
+                <span className="item-title">
+                  <Link to={`/permissoes/${permissao.id}`} style={{ color: "var(--accent)", textDecoration: "none" }}>
+                    <strong>{permissao.nome}</strong>
+                  </Link>
+                </span>
                 <span className="item-subtitle"><strong>Descrição:</strong> {permissao.descricao}</span>
               </div>
               <div className="item-actions">

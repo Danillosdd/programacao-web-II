@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import api from "../services/api";
 import type { Produto } from "../types/Produto";
 import ProdutoForm from "../components/ProdutoForm";
@@ -60,7 +61,11 @@ function ProdutosPage() {
           {produtos.map((produto) => (
             <li key={produto.id}>
               <div className="item-info">
-                <span className="item-title"><strong>Produto:</strong> {produto.nome}</span>
+                <span className="item-title">
+                  <Link to={`/produtos/${produto.id}`} style={{ color: "var(--accent)", textDecoration: "none" }}>
+                    <strong>{produto.nome}</strong>
+                  </Link>
+                </span>
                 <span className="item-subtitle"><strong>Preço:</strong> R$ {produto.preco.toFixed(2).replace(".", ",")}</span>
               </div>
               <div className="item-actions">
