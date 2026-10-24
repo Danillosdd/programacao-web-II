@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import type { FormEvent } from "react";
 import api from "../services/api";
 import type { Permissao } from "../types/Permissao";
+import Botao from "./Botao";
 
 interface PermissaoFormProps {
   onPermissaoSalva: () => void;
@@ -37,33 +38,43 @@ function PermissaoForm({ onPermissaoSalva, permissaoEditando }: PermissaoFormPro
         setNome("");
         setDescricao("");
       }
-    } catch (error) {
+    } catch {
       alert("Erro ao salvar permissão.");
     }
   }
 
+  const campo =
+    "rounded-md border border-gray-300 px-3 py-2 focus:border-blue-500 focus:outline-none";
+
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
+    <form
+      onSubmit={handleSubmit}
+      className="mb-6 grid gap-3 rounded-lg bg-white p-4 shadow md:grid-cols-3"
+    >
       <input
+        className={campo}
         value={nome}
         onChange={(e) => setNome(e.target.value)}
         placeholder="Nome da Permissão"
         required
       />
       <input
+        className={campo}
         value={descricao}
         onChange={(e) => setDescricao(e.target.value)}
         placeholder="Descrição"
         required
       />
-      <button type="submit">
-        {permissaoEditando ? "Salvar alterações" : "Cadastrar"}
-      </button>
-      {permissaoEditando && (
-        <button type="button" onClick={onPermissaoSalva} style={{ marginLeft: "5px" }}>
-          Cancelar
-        </button>
-      )}
+      <div className="flex gap-2">
+        <Botao type="submit" className="w-full">
+          {permissaoEditando ? "Salvar alterações" : "Cadastrar"}
+        </Botao>
+        {permissaoEditando && (
+          <Botao type="button" variante="neutro" onClick={onPermissaoSalva}>
+            Cancelar
+          </Botao>
+        )}
+      </div>
     </form>
   );
 }

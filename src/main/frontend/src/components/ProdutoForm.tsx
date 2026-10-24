@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import type { FormEvent } from "react";
 import api from "../services/api";
 import type { Produto } from "../types/Produto";
+import Botao from "./Botao";
 
 interface ProdutoFormProps {
   onProdutoSalvo: () => void;
@@ -37,38 +38,47 @@ function ProdutoForm({ onProdutoSalvo, produtoEditando }: ProdutoFormProps) {
         setNome("");
         setPreco("");
       }
-    } catch (error) {
+    } catch {
       alert("Erro ao salvar produto.");
     }
   }
 
+  const campo =
+    "rounded-md border border-gray-300 px-3 py-2 focus:border-blue-500 focus:outline-none";
+
   return (
-    <form onSubmit={handleSubmit} style={{ marginBottom: "20px" }}>
+    <form
+      onSubmit={handleSubmit}
+      className="mb-6 grid gap-3 rounded-lg bg-white p-4 shadow md:grid-cols-3"
+    >
       <input
+        className={campo}
         value={nome}
         onChange={(e) => setNome(e.target.value)}
         placeholder="Nome do Produto"
         required
       />
-      <div style={{ display: "flex", alignItems: "center", gap: "8px", background: "var(--bg-card)", border: "1px solid var(--border)", borderRadius: "6px", padding: "0 12px", marginBottom: "12px" }}>
-        <span style={{ color: "var(--text)", fontWeight: "bold" }}>R$</span>
+      <div className="flex items-center rounded-md border border-gray-300 bg-white px-3 focus-within:border-blue-500">
+        <span className="mr-2 font-medium text-gray-500">R$</span>
         <input
           type="text"
+          className="w-full py-2 outline-none"
           value={preco}
           onChange={(e) => setPreco(e.target.value)}
           placeholder="0,00"
           required
-          style={{ border: "none", outline: "none", padding: "10px 0", width: "100%", background: "transparent", color: "var(--text-h)" }}
         />
       </div>
-      <button type="submit">
-        {produtoEditando ? "Salvar alterações" : "Cadastrar"}
-      </button>
-      {produtoEditando && (
-        <button type="button" onClick={onProdutoSalvo} style={{ marginLeft: "5px" }}>
-          Cancelar
-        </button>
-      )}
+      <div className="flex gap-2">
+        <Botao type="submit" className="w-full">
+          {produtoEditando ? "Salvar alterações" : "Cadastrar"}
+        </Botao>
+        {produtoEditando && (
+          <Botao type="button" variante="neutro" onClick={onProdutoSalvo}>
+            Cancelar
+          </Botao>
+        )}
+      </div>
     </form>
   );
 }

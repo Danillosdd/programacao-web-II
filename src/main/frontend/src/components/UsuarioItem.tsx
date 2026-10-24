@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import type { Usuario } from "../types/Usuario";
+import Botao from "./Botao";
 
 interface UsuarioItemProps {
   usuario: Usuario;
@@ -9,18 +10,24 @@ interface UsuarioItemProps {
 
 function UsuarioItem({ usuario, onEdit, onDelete }: UsuarioItemProps) {
   return (
-    <li>
-      <div className="item-info">
-        <span className="item-title">
-          <Link to={`/usuarios/${usuario.id}`} style={{ color: "var(--accent)", textDecoration: "none" }}>
-            {usuario.nome} ({usuario.username})
-          </Link>
-        </span>
-        <span className="item-subtitle"><strong>E-mail:</strong> {usuario.email}</span>
+    <li className="flex items-center justify-between p-4">
+      <div>
+        <Link
+          to={`/usuarios/${usuario.id}`}
+          className="font-medium text-blue-600 hover:underline"
+        >
+          {usuario.nome}{" "}
+          <span className="text-gray-500">({usuario.username})</span>
+        </Link>
+        <p className="text-sm text-gray-500">{usuario.email}</p>
       </div>
-      <div className="item-actions">
-        <button className="btn-edit" onClick={() => onEdit(usuario)}>Editar</button>
-        <button className="btn-delete" onClick={() => onDelete(usuario.id)}>Excluir</button>
+      <div className="flex gap-2">
+        <Botao variante="neutro" onClick={() => onEdit(usuario)}>
+          Editar
+        </Botao>
+        <Botao variante="perigo" onClick={() => onDelete(usuario.id)}>
+          Excluir
+        </Botao>
       </div>
     </li>
   );

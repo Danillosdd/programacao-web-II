@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import api from "../services/api";
 import type { Usuario } from "../types/Usuario";
-import UsuarioItem from "../components/UsuarioItem";
 import UsuarioForm from "../components/UsuarioForm";
+import Botao from "../components/Botao";
 
 function UsuariosPage() {
   const [usuarios, setUsuarios] = useState<Usuario[]>([]);
@@ -33,15 +34,14 @@ function UsuariosPage() {
     try {
       await api.delete(`/usuarios/${id}`);
       carregarUsuarios();
-    } catch (error) {
+    } catch {
       alert("Erro ao excluir usuário.");
     }
   }
 
   return (
     <div>
-      <h2>Usuários</h2>
-      
+      <h1 className="mb-4 text-2xl font-bold text-gray-800">Usuários</h1>
       <UsuarioForm
         key={editando?.id ?? "novo"}
         usuarioEditando={editando}
@@ -51,23 +51,30 @@ function UsuariosPage() {
         }}
       />
 
-      {loading && <p>Carregando usuários...</p>}
-      {erro && <p style={{ color: "red" }}>{erro}</p>}
+      {loading && <p className="text-gray-500">Carregando usuários...</p>}
+      {erro && <p className="text-red-600">{erro}</p>}
 
       {!loading && !erro && (
-        <div style={{ marginTop: "24px" }}>
-          <h3>Lista de Usuários</h3>
-          <ul>
+        <ul className="divide-y divide-gray-200 rounded-lg bg-white shadow">
           {usuarios.map((usuario) => (
-            <UsuarioItem 
-              key={usuario.id} 
-              usuario={usuario} 
-              onEdit={setEditando} 
-              onDelete={excluir} 
-            />
+            <li key={usuario.id} className="flex items-center justify-between p-4">
+              <Link
+                to={`/usuarios/${usuario.id}`}
+                className="font-medium text-blue-600 hover:underline"
+              >
+                {usuario.nome} <span className="text-gray-500">({usuario.username})</span>
+              </Link>
+              <div className="flex gap-2">
+                <Botao variante="neutro" onClick={() => setEditando(usuario)}>
+                  Editar
+                </Botao>
+                <Botao variante="perigo" onClick={() => excluir(usuario.id)}>
+                  Excluir
+                </Botao>
+              </div>
+            </li>
           ))}
         </ul>
-        </div>
       )}
     </div>
   );

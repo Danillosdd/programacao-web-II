@@ -22,11 +22,12 @@ A aplicação conta com as seguintes entidades, seguindo o padrão de projeto `C
 3. **Produtos (Entidade de Interesse)**: Entidade escolhida pelo aluno para desenvolvimento das funcionalidades próprias. Possui validações e regras de negócio próprias definidas na camada de serviço (não é permitido produtos com preço negativo ou com nome vazio).
 4. **Relacionamento Muitos-para-Muitos (Usuario ↔ Permissao)**: Implementação de `@ManyToMany` com `@JoinTable` (`usuario_permissao`), serialização com `@JsonManagedReference` e `@JsonBackReference` evitando recursão infinita, além de tela interativa para vincular/desvincular permissões aos usuários (`GET/PUT /api/usuarios/{id}/permissoes`).
 5. **Roteamento SPA com React Router**: Navegação declarativa completa com `react-router-dom`, layout compartilhado com `<Outlet />`, abas com `<NavLink>`, telas de detalhes dinâmicas com `useParams` (`/usuarios/:id`, `/permissoes/:id`, `/produtos/:id`) e navegação programática com `useNavigate`.
+6. **Framework CSS com Tailwind CSS (Aula 08.5)**: Interface estilizada com abordagem *utility-first* usando Tailwind CSS integrado via `@tailwindcss/vite`, com layout responsivo (`mobile-first`), componente reutilizável `Botao` (com variantes `primario`, `perigo`, `neutro` e `sucesso`), formulários em grid e feedbacks visuais.
 
 ### 🌟 Diferenciais da Entrega
 
 Durante o desenvolvimento do Front-end, o projeto foi expandido para apresentar uma experiência de usuário (UX) premium:
-- **Design System Customizado**: Ao invés de CSS padrão, o sistema conta com uma interface moderna com cartões (`cards`), botões estilizados, e modo escuro sutil de alto contraste.
+- **Estilização com Tailwind CSS**: Interface moderna com cartões (`cards`), botões dinâmicos com estados de hover e disabled, e layout responsivo.
 - **Menu de Navegação Integrado ao React Router**: Layout com menu dinâmico destacando a rota ativa sem recarregamento da página e com suporte ao histórico do navegador (avançar/voltar).
 - **Tratamento de Máscara de Moedas**: O cadastro de Produtos possui campo de entrada que converte transparentemente o formato brasileiro (com vírgula) para decimal na comunicação com a API.
 - **UX de Formulários**: Adição de validações de exclusão sem pop-ups intrusivos e limpeza automática dos estados para evitar cadastros duplicados acidentais.
@@ -44,6 +45,7 @@ Durante o desenvolvimento do Front-end, o projeto foi expandido para apresentar 
 ### Front-end
 - React (utilizando Vite)
 - TypeScript
+- Tailwind CSS (`@tailwindcss/vite`)
 - React Router DOM
 - Axios (Integração de APIs)
 
