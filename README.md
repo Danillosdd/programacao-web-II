@@ -63,11 +63,11 @@ Na raiz do projeto (onde está o `pom.xml`), você pode inicializar a aplicaçã
 ```bash
 ./mvnw spring-boot:run
 ```
-*(O servidor do Spring Boot e o banco de dados H2 subirão automaticamente na porta 8081)*
+*(O servidor do Spring Boot e o banco de dados H2 subirão automaticamente na porta 8085)*
 
 ### 🗄️ Acesso ao Banco de Dados (H2 Console)
 Para visualizar o banco de dados e as tabelas criadas:
-1. Com o back-end rodando, acesse no navegador: `http://localhost:8081/h2-console`
+1. Com o back-end rodando, acesse no navegador: `http://localhost:8085/h2-console`
 2. **JDBC URL:** `jdbc:h2:file:./database.db`
 3. **User Name:** `sa`
 4. **Password:** *(deixe em branco)*
