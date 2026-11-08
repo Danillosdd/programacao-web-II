@@ -1,0 +1,35 @@
+UNIVERSIDADE ESTADUAL DE GOIÁS - UEG
+Disciplina: Programação Web II
+Professor: Braully Rocha da Silva
+Avaliação N2 — Definição de Tema e Grupo
+
+1. DADOS DO GRUPO
+- Aluno: Danillo Araújo de Paiva (Trabalho Individual)
+
+2. TEMA ESCOLHIDO
+- Tema: Sistema de E-commerce / Gestão de Vendas e Catálogo de Produtos
+- Descrição: Expansão do sistema desenvolvido na N1 para uma plataforma de controle de catálogo e pedidos de venda, integrando autenticação segura (JWT) e controle de acesso por perfis de usuário (ADMIN e USER).
+
+3. ESQUELETO DA N1 (JÁ IMPLEMENTADO)
+- Entidades: Usuario, Permissao e Produto (entidade de interesse da N1).
+- Funcionalidades: CRUDs completos em camadas, relacionamento ManyToMany (Usuario ↔ Permissao), navegação SPA com React Router e estilização com Tailwind CSS.
+
+4. NOVOS MODELOS PARA A N2 (MÍNIMO DE 2 NOVAS ENTIDADES)
+- Entidade 1: Categoria
+  * Atributos: id (Long), nome (String), descricao (String).
+  * Relacionamento: One-to-Many com Produto (1 Categoria possui vários Produtos).
+  * Regra de Negócio: Não permitir cadastro de categoria com nome vazio ou duplicado.
+
+- Entidade 2: Pedido
+  * Atributos: id (Long), dataPedido (LocalDateTime), status (String - ex: PENDENTE, PAGO, CANCELADO), valorTotal (Double).
+  * Relacionamentos: Many-to-One com Usuario (um Pedido pertence a um Usuario) e associação aos produtos adquiridos.
+  * Regra de Negócio: Valor total deve ser positivo e o pedido deve estar vinculado a um usuário válido.
+
+5. NOVAS TELAS (FRONT-END REACT)
+- Tela 1: CategoriasPage (/categorias) — CRUD completo de categorias com formulário controlado, edição, exclusão e exibição dos produtos associados.
+- Tela 2: PedidosPage (/pedidos) — Registro de pedidos, listagem histórica e visualização detalhada do status da compra.
+
+6. REQUISITOS TÉCNICOS INTEGRADOS
+- Back-end: Spring Boot (Spring Web, Spring Data JPA, Spring Security, H2 Database).
+- Segurança: Autenticação via JWT (JSON Web Token) com senhas criptografadas via BCrypt e restrição de endpoints via @PreAuthorize por papel (ADMIN/USER).
+- Front-end: React + Vite + TypeScript, estilização utility-first com Tailwind CSS, interceptor Axios com Bearer Token e rotas protegidas (RequireAuth).

@@ -1,6 +1,8 @@
-import { Routes, Route } from "react-router-dom";
+import type { ReactNode } from "react";
+import { Navigate, Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
+import LoginPage from "./pages/LoginPage";
 import UsuariosPage from "./pages/UsuariosPage";
 import UsuarioDetailPage from "./pages/UsuarioDetailPage";
 import PermissoesPage from "./pages/PermissoesPage";
@@ -8,11 +10,18 @@ import PermissaoDetailPage from "./pages/PermissaoDetailPage";
 import UsuarioPermissoesPage from "./pages/UsuarioPermissoesPage";
 import ProdutosPage from "./pages/ProdutosPage";
 import ProdutoDetailPage from "./pages/ProdutoDetailPage";
+import { obterToken } from "./services/auth";
+
+function RequireAuth({ children }: { children: ReactNode }) {
+  return obterToken() ? children : <Navigate to="/login" replace />;
+}
 
 function App() {
   return (
     <Routes>
-      <Route element={<Layout />}>
+      <Route path="/login" element={<LoginPage />} />
+
+      <Route element={<RequireAuth><Layout /></RequireAuth>}>
         <Route path="/" element={<Home />} />
         <Route path="/usuarios" element={<UsuariosPage />} />
         <Route path="/usuarios/:id" element={<UsuarioDetailPage />} />

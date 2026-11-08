@@ -1,4 +1,5 @@
-import { NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { obterSessao, sair, temPapel } from "../services/auth";
 
 const link = ({ isActive }: { isActive: boolean }) =>
   `rounded-md px-3 py-2 text-sm font-medium ${
@@ -6,16 +7,37 @@ const link = ({ isActive }: { isActive: boolean }) =>
   }`;
 
 function Layout() {
+  const navigate = useNavigate();
+  const sessao = obterSessao();
+
+  function deslogar() {
+    sair();
+    navigate("/login", { replace: true });
+  }
+
   return (
     <div className="min-h-screen bg-gray-100">
       <nav className="bg-blue-600 shadow">
-        <div className="mx-auto flex max-w-5xl items-center gap-2 px-4 py-3">
+        <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-2 px-4 py-3">
           <span className="mr-4 text-lg font-bold text-white">Sistema</span>
           <NavLink to="/" end className={link}>Home</NavLink>
-          <NavLink to="/usuarios" className={link}>Usuários</NavLink>
-          <NavLink to="/permissoes" className={link}>Permissões</NavLink>
-          <NavLink to="/atribuir-permissoes" className={link}>Atribuir Permissões</NavLink>
+          {temPapel("ADMIN") && (
+            <>
+              <NavLink to="/usuarios" className={link}>Usuários</NavLink>
+              <NavLink to="/atribuir-permissoes" className={link}>Atribuir Permissões</NavLink>
+              <NavLink to="/permissoes" className={link}>Permissões</NavLink>
+            </>
+          )}
           <NavLink to="/produtos" className={link}>Produtos</NavLink>
+          <span className="ml-auto text-sm text-blue-100">
+            {sessao?.nome ?? "Visitante"}
+          </span>
+          <button
+            onClick={deslogar}
+            className="rounded-md bg-red-600 px-3 py-2 text-sm font-medium text-white hover:bg-red-700"
+          >
+            Sair
+          </button>
         </div>
       </nav>
       <main className="mx-auto max-w-5xl p-4">

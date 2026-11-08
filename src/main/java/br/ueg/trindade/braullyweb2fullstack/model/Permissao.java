@@ -24,6 +24,11 @@ public class Permissao {
 
     public Permissao() {}
 
+    public Permissao(String nome, String descricao) {
+        this.nome = nome;
+        this.descricao = descricao;
+    }
+
     public Permissao(Long id, String nome, String descricao) {
         this.id = id;
         this.nome = nome;
