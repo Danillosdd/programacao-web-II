@@ -10,6 +10,8 @@ import PermissaoDetailPage from "./pages/PermissaoDetailPage";
 import UsuarioPermissoesPage from "./pages/UsuarioPermissoesPage";
 import ProdutosPage from "./pages/ProdutosPage";
 import ProdutoDetailPage from "./pages/ProdutoDetailPage";
+import CategoriasPage from "./pages/CategoriasPage";
+import PedidosPage from "./pages/PedidosPage";
 import { obterToken } from "./services/auth";
 
 function RequireAuth({ children }: { children: ReactNode }) {
@@ -30,6 +32,8 @@ function App() {
         <Route path="/atribuir-permissoes" element={<UsuarioPermissoesPage />} />
         <Route path="/produtos" element={<ProdutosPage />} />
         <Route path="/produtos/:id" element={<ProdutoDetailPage />} />
+        <Route path="/categorias" element={<CategoriasPage />} />
+        <Route path="/pedidos" element={<PedidosPage />} />
         <Route path="*" element={<h2>Página não encontrada</h2>} />
       </Route>
     </Routes>

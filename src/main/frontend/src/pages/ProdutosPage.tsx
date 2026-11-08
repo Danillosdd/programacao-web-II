@@ -31,6 +31,9 @@ function ProdutosPage() {
   }, []);
 
   async function excluir(id: number) {
+    if (!window.confirm("Deseja realmente excluir este produto?")) {
+      return;
+    }
     try {
       await api.delete(`/produtos/${id}`);
       carregarProdutos();
@@ -41,8 +44,13 @@ function ProdutosPage() {
 
   return (
     <div>
-      <h1 className="mb-4 text-2xl font-bold text-gray-800">Produtos</h1>
-      
+      <div className="mb-4">
+        <h1 className="text-2xl font-bold text-gray-800">Catálogo de Produtos</h1>
+        <p className="text-sm text-gray-500">
+          Cadastre novos produtos e vincule-os às suas categorias correspondentes.
+        </p>
+      </div>
+
       <ProdutoForm
         key={editando?.id ?? "novo"}
         produtoEditando={editando}
@@ -66,9 +74,16 @@ function ProdutosPage() {
                 >
                   <strong>{produto.nome}</strong>
                 </Link>
-                <p className="text-sm text-gray-500">
-                  Preço: R$ {produto.preco.toFixed(2).replace(".", ",")}
-                </p>
+                <div className="flex items-center gap-2 mt-1">
+                  <span className="text-sm text-gray-600">
+                    Preço: <strong>R$ {produto.preco.toFixed(2).replace(".", ",")}</strong>
+                  </span>
+                  {produto.categoria && (
+                    <span className="rounded bg-blue-50 px-2 py-0.5 text-xs font-semibold text-blue-700 border border-blue-200">
+                      📁 {produto.categoria.nome}
+                    </span>
+                  )}
+                </div>
               </div>
               <div className="flex gap-2">
                 <Botao variante="neutro" onClick={() => setEditando(produto)}>
